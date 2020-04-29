@@ -13,7 +13,7 @@ step 2:
 step 3: 
 	Run the newly created docker image as container
 
-	docker run  -p 8080:8080 --name mysql_nodejs -e MYSQL_ROOT_PASSWORD=password mysql_nodejs
+	docker run  -p 8080:8080 --name mysql_nodejs -e MYSQL_ROOT_PASSWORD=secret mysql_nodejs
 
 step 4:
 	Execute the container
