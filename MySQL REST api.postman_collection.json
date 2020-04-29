@@ -1,0 +1,400 @@
+{
+	"id": "542c9115-2869-a1c5-66ef-051d609aedc7",
+	"name": "MySQL REST api",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "DELETE",
+			"description": "http://localhost:8080/ID\n\nDELETE FROM `students` WHERE `ID`=?\n\n",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"order": [
+				"93d19a7b-37ac-8bfb-ca7c-96a194608cf9",
+				"29559d0b-1eb0-ded0-fb7b-dd80692037a7"
+			],
+			"owner": "11189955",
+			"folders_order": [],
+			"id": "98128dc9-65bc-b5ed-5bea-99cd03af83b2"
+		},
+		{
+			"name": "GET",
+			"description": "http://localhost:8080/user\n\nselect * from student;",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"order": [
+				"8af9c779-311c-53bf-fb8f-07043727b0de",
+				"1db810b0-fb74-ce43-a028-c683e90cfd7c"
+			],
+			"owner": "11189955",
+			"folders_order": [],
+			"id": "b925934e-6be2-a064-e66c-d7dae25bf084"
+		},
+		{
+			"name": "GET/ID",
+			"description": "http://localhost:8080/user/ID\n\n'select * from students where ID=?'",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"order": [
+				"a19c4406-345b-4e0f-e547-6423ee42d6a4",
+				"9d62ab16-bc4e-0315-7f36-e6bd35e2ef9e"
+			],
+			"owner": "11189955",
+			"folders_order": [],
+			"id": "431369a7-73a9-ab26-5971-7243451497af"
+		},
+		{
+			"name": "POST",
+			"description": "http://localhost:8080/user\n\nINSERT INTO students (ID, Name, Age, Department, Subject) values (?, ?, ?, ?, ?);",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"order": [
+				"d7797080-bc2b-e9b4-22c4-4ede56b4c84a",
+				"b4d4d7c7-769f-8902-7cee-f8894cd643da"
+			],
+			"owner": "11189955",
+			"folders_order": [],
+			"id": "816dc9db-6e63-37f8-fcc1-71bba995396f"
+		},
+		{
+			"name": "PUT",
+			"description": "http://localhost/user/ID\n\nUPDATE `students` SET `Name`=?,`Age`=?,`Department`=?,`Subject`=? where `ID`=?';",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"order": [
+				"440a95d3-c988-87d5-8911-c92a15d09657",
+				"5692861a-992f-1849-d1e8-a40a6cda2362"
+			],
+			"owner": "11189955",
+			"folders_order": [],
+			"id": "5d5c3128-c4b7-f96b-3e3e-cb5350e57b31"
+		}
+	],
+	"folders_order": [
+		"b925934e-6be2-a064-e66c-d7dae25bf084",
+		"816dc9db-6e63-37f8-fcc1-71bba995396f",
+		"5d5c3128-c4b7-f96b-3e3e-cb5350e57b31",
+		"98128dc9-65bc-b5ed-5bea-99cd03af83b2",
+		"431369a7-73a9-ab26-5971-7243451497af"
+	],
+	"timestamp": 1588101157540,
+	"owner": "11189955",
+	"public": false,
+	"requests": [
+		{
+			"id": "1db810b0-fb74-ce43-a028-c683e90cfd7c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/user",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1588141793612,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "b925934e-6be2-a064-e66c-d7dae25bf084",
+			"rawModeData": "{\n\t\"ID\":223,\n\t\"Name\":\"Nale Rohit Shashikant\",\n\t\"Age\":23,\n\t\"Department\":\"MCS\",\n\t\"Subject\":\"cs402,cs403,cs404,cs405\"\n}"
+		},
+		{
+			"id": "29559d0b-1eb0-ded0-fb7b-dd80692037a7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/18229",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/user/18229",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1588141934236,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "98128dc9-65bc-b5ed-5bea-99cd03af83b2",
+			"rawModeData": "{\n\t\"ID\":18229,\n\t\"Name\":\"Swapnil shende\",\n\t\"Age\":23,\n\t\"Department\":\"Master of Computer Sciences\",\n\t\"Subject\":\"cs402,cs403,cs404,cs405\"\n}"
+		},
+		{
+			"id": "440a95d3-c988-87d5-8911-c92a15d09657",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/user",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1588102376977,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "5d5c3128-c4b7-f96b-3e3e-cb5350e57b31",
+			"rawModeData": "{\n\t\"ID\":223,\n\t\"Name\":\"Nale Rohit Shashikant\",\n\t\"Age\":23,\n\t\"Department\":\"MCS\",\n\t\"Subject\":\"cs402,cs403,cs404,cs405\"\n}"
+		},
+		{
+			"id": "5692861a-992f-1849-d1e8-a40a6cda2362",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/user",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1588141910675,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "5d5c3128-c4b7-f96b-3e3e-cb5350e57b31",
+			"rawModeData": "{\n\t\"ID\":18229,\n\t\"Name\":\"Swapnil shende\",\n\t\"Age\":23,\n\t\"Department\":\"Master of Computer Sciences\",\n\t\"Subject\":\"cs402,cs403,cs404,cs405\"\n}"
+		},
+		{
+			"id": "8af9c779-311c-53bf-fb8f-07043727b0de",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/user",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1588102159695,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "b925934e-6be2-a064-e66c-d7dae25bf084",
+			"rawModeData": "{\n\t\"ID\":18226,\n\t\"Name\":\"Nale Rohit Shashikant\",\n\t\"Age\":23,\n\t\"Department\":\"MCS\",\n\t\"Subject\":\"cs402,cs403,cs404,cs405\"\n}"
+		},
+		{
+			"id": "93d19a7b-37ac-8bfb-ca7c-96a194608cf9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/223",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/user/223",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1588102552857,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "98128dc9-65bc-b5ed-5bea-99cd03af83b2",
+			"rawModeData": "{\n\t\"ID\":223,\n\t\"Name\":\"Nale Rohit Shashikant\",\n\t\"Age\":23,\n\t\"Department\":\"MCS\",\n\t\"Subject\":\"cs402,cs403,cs404,cs405\"\n}"
+		},
+		{
+			"id": "9d62ab16-bc4e-0315-7f36-e6bd35e2ef9e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/18229",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/user/18229",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1588141864631,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "431369a7-73a9-ab26-5971-7243451497af",
+			"rawModeData": "{\n\t\"ID\":18229,\n\t\"Name\":\"Swapnil shende\",\n\t\"Age\":23,\n\t\"Department\":\"MCS\",\n\t\"Subject\":\"cs402,cs403,cs404,cs405\"\n}"
+		},
+		{
+			"id": "a19c4406-345b-4e0f-e547-6423ee42d6a4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/18226",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/user/18226",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1588102721643,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "431369a7-73a9-ab26-5971-7243451497af",
+			"rawModeData": "{\n\t\"ID\":223,\n\t\"Name\":\"Nale Rohit Shashikant\",\n\t\"Age\":23,\n\t\"Department\":\"MCS\",\n\t\"Subject\":\"cs402,cs403,cs404,cs405\"\n}"
+		},
+		{
+			"id": "b4d4d7c7-769f-8902-7cee-f8894cd643da",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/user",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1588141840596,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "816dc9db-6e63-37f8-fcc1-71bba995396f",
+			"rawModeData": "{\n\t\"ID\":18229,\n\t\"Name\":\"Swapnil shende\",\n\t\"Age\":23,\n\t\"Department\":\"MCS\",\n\t\"Subject\":\"cs402,cs403,cs404,cs405\"\n}"
+		},
+		{
+			"id": "d7797080-bc2b-e9b4-22c4-4ede56b4c84a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "542c9115-2869-a1c5-66ef-051d609aedc7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/user",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1588102293263,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "816dc9db-6e63-37f8-fcc1-71bba995396f",
+			"rawModeData": "{\n\t\"ID\":223,\n\t\"Name\":\"Nale Rohit Shashikant\",\n\t\"Age\":23,\n\t\"Department\":\"master of computer sciences\",\n\t\"Subject\":\"cs402,cs403,cs404,cs405\"\n}"
+		}
+	]
+}
